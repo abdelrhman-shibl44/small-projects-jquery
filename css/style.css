@@ -11,7 +11,8 @@ body {
     height: 3000px;
     box-sizing: border-box;
     -webkit-border-sizing: border-box;
-    -o-border-sizing: border-box
+    -o-border-sizing: border-box;
+    background-color: #fff;
 }
 
 /* dark mode */
