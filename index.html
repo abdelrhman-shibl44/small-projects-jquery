@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width'>
+    <title>practice with jquery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href ='css/animate.min.css'>
+
+<body>
+    <button id="top">Up</button>
+    <div class="navMenu skin-background">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container">
+        <div class="darkMode">
+            <i class="fa-solid fa-sun theme-icon"></i>
+        </div>
+        <nav>
+            <li><a class="active" href="#" data-scroll="Home">Home</a></li>
+            <li><a href="#" data-scroll="About">About</a></li>
+            <li><a href="#" data-scroll="Services">Services</a></li>
+            <li><a href="#" data-scroll="Solution">solution</a></li>
+            <li><a href="#" data-scroll="ContactUs">Contact Us</a></li>
+        </nav>
+        <!-- start fixed menu -->
+        <div class="fixedMenu">
+            <div class="icon">
+                <i class="fa-solid fa-fan"></i>
+            </div>
+            <div class="colors">
+                <h2 class="skin-color">Colors</h2>
+                <ul>
+                    <li class="active" data-color="#ff9800"></li>
+                    <li data-color="#2756ae"></li>
+                    <li data-color="lightgreen"></li>
+                    <li data-color="#c22ac2"></li>
+                    <li data-color="lightgray"></li>
+            </ul>
+        </div>
+        <div class="background">
+            <h2 class="skin-color">auto-background</h2>
+            <div class="ques">
+                <span class="active skin-background" data-change = 'true'>true</span>
+                <span class="skin-background" data-change  ="false">false</span>
+            </div>
+        </div>
+        </div>
+        </div>
+    <!-- make a message -->
+    <div class="message skin-background">
+        <p>
+            Hello, I'm Abdelrhman I Am a Web Developer.
+            <br />
+            welcome to my simple page.
+        </p>
+        <button class="close__message">x</button>
+    </div>
+    <!--  end the message -->
+    <section id="Home">
+        <div class="container">
+
+            <div class="img-holder">
+                <div class="arrows left ">
+                <svg class="fa-solid fa-angle-left"></svg>
+            </div>
+            <div class="arrows right">
+                <svg class="fa-solid fa-angle-right"></svg>
+            </div>
+            <div class="mainImg">
+                <img src="images/img2.png" alt="image"/>
+            </div>
+            <div class="thumbnailImgs">
+                <img class="active" alt="image"src="images/img2.png">
+                <img src="images/img1.png" alt="image"/>
+                <img src="images/img3.png" alt="image"/>
+                <img src="images/img4.png" alt="image"/>
+                <img src="images/img5.png" alt="image"/>
+                <img src="images/img6.png" alt="image"/>
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="About" class="section1">
+        <h2>About Us</h2>
+        <div class="container">
+            <div class="progress">
+                html
+                <span data-width="90"></span>
+        </div>
+        <div class="progress">
+            css
+            <span data-width="90"></span>
+        </div>
+        <div class="progress">
+            javascript
+            <span data-width="85"></span>
+        </div>
+        <div class="progress">
+            jquery
+            <span data-width="85"></span>
+        </div>
+        <div class="progress">
+            bootstrap
+            <span data-width="80"></span>
+        </div>
+        <div class="progress">
+            sass
+            <span data-width="80"></span>
+        </div>
+    </div>
+    </section>
+    <section id="Services" class="section2">
+        <h2>services</h2>
+        <div class="container">
+            <div class="products">
+                <div class="product one">
+                    <h3>Product One</h3>
+                    <p>8/7/2022</p>
+                    <img src="images/product.jpg" alt="photo">
+                    <div class="icon">
+                        <div class="increase">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <p class="note">our Product are cheap</p>
+                </div>
+                <div class="product two">
+                    <h3>Product Two</h3>
+                    <p>8/7/2022</p>
+                    <img src="images/product.jpg" alt="photo">
+                    <div class="icon">
+                        <div class="increase">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <p class="note">our Products are special</p>
+                </div>
+            </div>
+            <!-- icons to make switch -->
+            <div class="switch">
+                <div class="active group th">
+                    <i class="fa-solid fa-th-large"></i>
+                </div>
+                <div class="group list">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+            <!-- listItem -->
+            <div class="items">
+                <div class="item gridview one">
+                    <h3>Product One</h3>
+                    <p>8/7/2022</p>
+                    <img src="images/product.jpg" alt="photo">
+                    <div class="icon">
+                        <div class="increase">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <p class="note">our Product are cheap</p>
+                </div>
+                <div class="item gridview two">
+                    <h3>Product Two</h3>
+                    <p>8/7/2022</p>
+                    <img src="images/product.jpg" alt="photo">
+                    <div class="icon">
+                        <div class="increase">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <p class="note">our Products are special</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="Solution" class="section3">
+        <h2>auto-Height</h2>
+        <div class="container">
+            <div  class="same">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis est tempore, ex assumenda accusamus,
+            cupiditate doloremque nulla repellat voluptates sapiente error natus ut eum nostrum esse odit eius aperiam
+            placeat veniam delectus at dignissimos quia voluptatum. Temporibus quam sunt, assumenda repellendus
+            perspiciatis nemo eveniet pariatur soluta recusandae cumque quibusdam nihil incidunt debitis voluptates
+            ipsum deserunt placeat maiores libero accusantium error fuga sapiente hic necessitatibus? Ducimus
+            tempconsequuntur repudiandae tempora ipsa explicabo incidunt soluta sint? Magnam culpa eius minima aliquid
+        </div>
+        <div class="same">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At aspernatur veniam doloribus vero quia rem. Sed
+            doloribus eveniet necessitatibus sequi, facere deleniti ducimus atque odit distinctio qui, asperiores
+            blanditiis nemo, quae reprehenderit earum aut officiis hic voluptatum cum facilis perferendis minus minima
+            consequuntur exercitationem? Consequatur officia modi perspiciatis possimus nulla voluptate. Accusantium
+            placeat quae officiis dolore sit amet tempora, tempore quas dolor voluptas, porro quidem corporis sed
+            laudantium incidunt aliquam architecto, nulla doloremque odio possimus distinctio iste ducimus. Ut quisquam
+            quam repellendus sapiente eveniet distinctio suscipit illo dolor corporis expedita deleniti numquam
+            assumenda nihil obcaecati vel quia praesentium, fugit necessitatibus voluptatem id non culpa. Aut fuga
+            explicabo natus distinctio. Eius veritatis rem vero recusandae, mollitia unde? Mollitia corporis doloremque
+            fuga voluptatem illum laborum totam voluptate ea modi soluta, aspernatur saepe sapiente rerum veritatis,
+            numquam, in sed eveniet quasi iusto ab eaque quas! Quidem facere doloribus modi nesciunt magni. Consequuntur
+            .</div>
+            <div class="same">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro molestias, id impedit esse quod sint
+                aspernatur recusandae laboriosam! Consectetur soluta quam nihil sint odit possimus sunt fuga vitae hic.
+                Repudiandae quae in, ea cupiditate odio eius esse recusandae ratione, unde quasi vero suscipit obcaecati
+                ullam officiis, non harum ipsa et quaerat nobis aspernatur quod itaque error voluptatem sed! Illum corrupti
+                officia asperiores, tempore veritatis minus cum ipsa nesciunt dolorum molestiae quaerat sint veniam
+                repudiandae explicabo similique eius deleniti adipisci esse. Tempore impedit accusamus, alias inventore
+                mollitia totam sunt quas necessitatibus nulla similique voluptatum saepe repellendus voluptates. Facere,
+                voluptatem cupiditate!
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <h2>layers animation</h2>
+        <div class="holder">
+            <div class="card one"></div>
+            <div class="card two"></div>
+            <div class="card three"></div>
+            <div class="card four"></div>
+            <div class="card five"></div>
+            <div class="card six"></div>
+            <div class="card seven"></div>
+            <div class="card eight"></div>
+            <div class="card nine"></div>
+            <div class="card ten"></div>
+        </div>
+    </section>
+    <section class="todoList">
+        <h2>todoList</h2>
+            <div class="container">
+                <div class="todoHolder">
+                    <input title="todo" type="text" id="todo">
+                    <div class="results">
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="auto-text">
+        <h2>auto-text</h2>
+        <div class="container">
+            <p class="typer"
+            data-text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, sit numquam incidunt quae deserunt dolore similique quasi nostrum sed ipsa odio porro eius dolor expedita officiis eaque molestiae dolores adipisci.">
+            <span></span>
+        </p>
+    </div>
+    </section>
+    <!-- start change text -->
+    <section class="changeText">
+        <div class="container">
+            <div class="textholder">
+                <h2>Today's Note</h2>
+                <ul>
+                    <li class="active">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi
+                        perferendis, qui first
+                        reiciendis quae aliquam eaque a non ut</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iusto nesciunt incidunt voluptatum
+                        rerum dolor commodi eligendi inventore voluptate fugit. second</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minus atque maiores ipsum, voluptate
+                        tenetur molestias eius neque impedit ea. third</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, veniam excepturi
+                        consequatur incidunt reprehenderit provident nulla modi necessitatibus sunt? four</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi iusto incidunt! Maxime
+                        dignissimos illum quidem temporibus, voluptatem iusto nobis! fifth</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+                            <!-- start tabs -->
+    <section class="tabs">
+        <h2>Dynamic Tabs</h2>
+        <div class="container">
+
+            <div class="tabsHolder column">
+                <!-- start change text -->
+            <button class="switch">Switch View</button>
+            <ul>
+                <li class="active" data-tab=".contentOne">tabOne</li>
+                <li data-tab=".contentTwo">tabTwo</li>
+                <li data-tab=".contentThree">tabThree</li>
+                <li data-tab=".contentFour">tabFour</li>
+                <li data-tab=".contentFive">tabFive</li>
+            </ul>
+            <div class="contentHolder">
+                <div class="active contentOne">hi,this is the first div ,what do you think about my tabs?</div>
+                <div class="contentTwo">hi,this is the second div ,what do you think about my tabs?</div>
+                <div class="contentThree">hi,this is the third div ,what do you think about my tabs?</div>
+                <div class="contentFour">hi,this is the fourth div ,what do you think about my tabs?</div>
+                <div class="contentFive">hi,this is the fifth div ,what do you think about my tabs?</div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- end tabs -->
+    <!-- start emeil providers -->
+    <section class="emailProviders">
+        <h2>Email Providers</h2>
+        <div class="container">
+            <form action="">
+                <input class="email-suggest" type="email" placeholder="write your email here" autocomplete="off"">
+            </form>
+        </div>
+    </section>
+    <!-- end email providers -->
+    <section class="buttons-effect">
+            <h2>buttons-effect</h2>
+            <button class="showPopup" data-pop=".firstOne">
+            show 1st popup
+            <span></span>
+        </button>
+        <button class="showPopup" data-pop=".secondOne">
+            <span data-width=""></span>
+            show 2nd popup
+        </button>
+            <!-- effect with border -->
+        <button class="borderEffect left">
+            borderEffect
+            <span data-width=""=""></span>
+        </button>
+        <button class="borderEffect right">
+            borderEffect2
+            <span data-width=""></span>
+        </button>
+
+            <div class="popUp firstOne">
+        <div class="inner">
+            <h2>hello from popUp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptate corrupti quia minus
+                voluptates magnam amet, molestiae enim consequatur, vero accusantium reprehenderit ducimus asperiores
+                itaque quas incidunt dicta tempora suscipit!</p>
+            <button class="closePop">X</button>
+        </div>
+    </div>
+    <div class="popUp secondOne">
+        <div class="inner">
+            <h2>hello from 2nd popUp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptate corrupti quia minus
+                voluptates magnam amet, molestiae enim consequatur, vero accusantium reprehenderit ducimus
+                asperiores
+                itaque quas incidunt dicta tempora suscipit!</p>
+            <button class="closePop">X</button>
+        </div>
+    </div>
+    </section>
+    <!-- start contact us  -->
+    <section id="ContactUs" class="section4">
+            <h2>Contact Us</h2>
+            <div class="container">
+                <form action="">
+                    <div>
+                        <input class="auto-direction" type="text"  title="text" required>
+                        <span class="placeHolder english">Your Name</span>
+                        <span class="placeHolder arabic">اسمك</span>
+                    </div>
+                    <div>
+                        <input class="auto-direction" type="password" title="password" required>
+                        <span class="placeHolder english">Your Password</span>
+                        <span class="placeHolder arabic">باسورد</span>
+                    </div>
+                    <div>
+                        <input class="auto-direction" type="email" name="" id=""  title="email" required>
+                        <span class="placeHolder english">Your Email</span>
+                        <span class="placeHolder arabic">ايميل</span>
+                    </div>
+                    <div>
+                        <textarea title="textarea" class="auto-direction" cols="10" rows="10"></textarea>
+                        <span class="textarea english">Your Message</span>
+                        <span class="textarea arabic">رسالتك</span>
+                    </div>
+                    <div>
+                        <input class="tag" type="text" placeholder="put your tag name then put ,">
+                        <p><strong class="skin-color">Note</strong>:you can't repeat the tag name</p>
+                        <div class="tags"></div>
+                    </div>
+                    <input title="file" type="file">
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+    </section>
+    <!-- end contact us -->
+    <footer>
+        <p> all rights reserved @ <span class="skin-color">abdelrhman shibl</span></p>
+    </footer>
+
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
